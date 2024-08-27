@@ -1,5 +1,8 @@
 import styles from "./AboutMe.styles.css";
 import React, { useState } from "react";
+import github from "./assets/github.svg"
+import linkedin from "./assets/linkedin.svg"
+
 
 const AboutMe=() =>{
   const [imageURL, setImageURL] = useState(
@@ -27,7 +30,14 @@ const AboutMe=() =>{
           - <strong>Martin Luther King, Jr.</strong>
         </p>
       </div>
-      <div className = "icons"></div>
+      <div className = "icons">
+        <a className = "LinkedinLink" href = "https://www.linkedin.com/in/carlos-marin-90482b13b/" target="_blank" rel="noopener noreferrer">
+        <img src = {linkedin} />
+        </a>
+        <a className = "GithubLink" href = "https://github.com/carlos-marin1742" target="_blank" rel="noopener noreferrer">
+            <img src = {github}/>
+        </a>
+        </div>
     </div>
   );
 }
