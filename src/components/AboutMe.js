@@ -1,11 +1,11 @@
-import styles from "./AboutMe.styles.css";
+// import styles from "./AboutMe.styles.css";
 import React, { useState } from "react";
 import github from "./assets/github.svg"
 import linkedin from "./assets/linkedin.svg"
 
 
 const AboutMe=() =>{
-  const [imageURL, setImageURL] = useState(
+  const [imageURL] = useState(
     "https://media.licdn.com/dms/image/C5603AQGUe6LXcZ0rmg/profile-displayphoto-shrink_800_800/0/1517609301822?e=1728518400&v=beta&t=whV-0_wXi9_XWJbR34DAQyjasiFswMMeJCEByab7-OY"
   );
   return (

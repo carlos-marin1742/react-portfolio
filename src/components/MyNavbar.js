@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import styles from "./MyNavbar.styles.css";
+// import styles from "./MyNavbar.styles.css";
 
 const MyNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleNavbar = () => {
+  //   setIsOpen(!isOpen);
+  // };
   return (
     <header className="header">
       <a href="#" className="logo">
