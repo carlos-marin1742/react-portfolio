@@ -1,4 +1,4 @@
-// import styles from "./AboutMe.styles.css";
+import styles from "./AboutMe.styles.css";
 import React, { useState } from "react";
 import github from "./assets/github.svg"
 import linkedin from "./assets/linkedin.svg"
@@ -10,7 +10,7 @@ const AboutMe=() =>{
   );
   return (
     <div classname="imgtxtcontainer">
-      <img classname="imageMe" src={imageURL} />
+      <img classname={styles.ImageMe} src={imageURL} alt="" />
       <div classname="about-me-text">
         <h1> Carlos Marin's Portfolio </h1>
         <i>FULL STACK SOFTWARE ENGINEER</i>
@@ -32,10 +32,10 @@ const AboutMe=() =>{
       </div>
       <div className = "icons">
         <a className = "LinkedinLink" href = "https://www.linkedin.com/in/carlos-marin-90482b13b/" target="_blank" rel="noopener noreferrer">
-        <img src = {linkedin} />
+        <img className= "icon" src = {linkedin} />
         </a>
         <a className = "GithubLink" href = "https://github.com/carlos-marin1742" target="_blank" rel="noopener noreferrer">
-            <img src = {github}/>
+            <img className= "icon" src = {github}/>
         </a>
         </div>
     </div>

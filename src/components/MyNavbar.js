@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import styles from "./MyNavbar.styles.css";
+import styles from "./MyNavbar.styles.css";
 
 const MyNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,7 @@ const MyNavbar = () => {
   //   setIsOpen(!isOpen);
   // };
   return (
-    <header className="header">
+    <header className={styles.header}>
       <a href="#" className="logo">
         Carlos Marin
       </a>

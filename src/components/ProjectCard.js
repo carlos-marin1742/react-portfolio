@@ -4,6 +4,7 @@ import React from "react";
 const ProjectCard = (props) => {
   const { project } = props;
   return (
+    <div class="container">
     <div class="box">
       <div class="box-top">
         <img class="box-image" src={project.imageURL} />
@@ -15,6 +16,7 @@ const ProjectCard = (props) => {
       <a href="#" src={project.githubLink} class="button">
         Github Link
       </a>
+    </div>
     </div>
   );
 };
