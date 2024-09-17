@@ -1,19 +1,19 @@
-import styles from "./Projects.styles.css";
+import  "./Projects.styles.css";
 import React from "react";
 
 const ProjectCard = (props) => {
   const { project } = props;
   return (
-    <div class="container">
-    <div class="box">
-      <div class="box-top">
-        <img class="box-image" src={project.imageURL} />
-        <div class="title-flex">
-          <h3 class="box-title">{project.title}</h3>
+    <div className="wrap">
+    <div className="box">
+      <div className="box-top">
+        <img className="box-image" src={project.imageURL} />
+        <div className="title-flex">
+          <h3 className="box-title">{project.title}</h3>
         </div>
-        <p class="description">{project.description}</p>
+        <p className="description">{project.description}</p>
       </div>
-      <a href="#" src={project.githubLink} class="button">
+      <a href="#" src={project.githubLink} className="button">
         Github Link
       </a>
     </div>

@@ -1,16 +1,22 @@
 import styles from "./AboutMe.styles.css";
-import React, { useState } from "react";
+import React from "react";
+import CarlosMarin from "./assets/CarlosMarin.jpeg"
 import github from "./assets/github.svg"
-import linkedin from "./assets/linkedin.svg"
+import linkedin2 from "./assets/linkedin2.png"
+import github2 from "./assets/GitHub-Logo.png"
+import github3 from "./assets/github3.png"
+
 
 
 const AboutMe=() =>{
-  const [imageURL] = useState(
-    "https://media.licdn.com/dms/image/C5603AQGUe6LXcZ0rmg/profile-displayphoto-shrink_800_800/0/1517609301822?e=1728518400&v=beta&t=whV-0_wXi9_XWJbR34DAQyjasiFswMMeJCEByab7-OY"
-  );
+
   return (
-    <div classname="imgtxtcontainer">
-      <img classname={styles.ImageMe} src={imageURL} alt="" />
+    <div id = "BIO">
+      
+      <div className = "image-container">
+        <img className="CarlosMarin" src = {CarlosMarin} alt = "Carlos Marin"/>
+        </div>
+
       <div classname="about-me-text">
         <h1> Carlos Marin's Portfolio </h1>
         <i>FULL STACK SOFTWARE ENGINEER</i>
@@ -30,15 +36,21 @@ const AboutMe=() =>{
           - <strong>Martin Luther King, Jr.</strong>
         </p>
       </div>
-      <div className = "icons">
+
+            // Test DIV //
+            <div className = "icons">
         <a className = "LinkedinLink" href = "https://www.linkedin.com/in/carlos-marin-90482b13b/" target="_blank" rel="noopener noreferrer">
-        <img className= "icon" src = {linkedin} />
+        <img className= "icon" src = {linkedin2} alt = "Linkedin" />
         </a>
         <a className = "GithubLink" href = "https://github.com/carlos-marin1742" target="_blank" rel="noopener noreferrer">
-            <img className= "icon" src = {github}/>
-        </a>
+            <img className= "icon" src = {github3} alt = "Github"/>
+            </a>
         </div>
-    </div>
+
+
+   
+        </div>
+   
   );
 }
 

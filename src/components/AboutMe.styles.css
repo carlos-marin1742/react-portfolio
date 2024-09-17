@@ -1,8 +1,44 @@
-.imageMe {
-    width: 100%;
-    height: auto;
+#BIO {
+  margin:auto;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}*/
+
+/* My picture div */
+.image {
+  width: 250px;
+ /* justify-content: center; */
+ /* margin: 0 auto; */
+
+}
+
+/* My Picture */
+.CarlosMarin{
+  width: 400px;
+display: block;
+margin-left: auto;
+
+
+}
+
+/* Bio text div */
+.about-me-text{
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  text-align: center;
+
+}
+
+  /* h1 header of Carlos Marin's Portfolio */
+  h1 {
+    text-align: center; /* Center text inside the div */
   }
 
+  
   img {
     width: 100px;
   }
