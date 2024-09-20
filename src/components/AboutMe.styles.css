@@ -1,49 +1,29 @@
-#BIO {
-  margin:auto;
-  position: relative;
-  align-items: center;
-  text-align: center;
-}*/
-
-/* My picture div */
-.image {
-  width: 250px;
- /* justify-content: center; */
- /* margin: 0 auto; */
-
+body {
+  background-color: #e2e2df;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 60px;
 }
 
-/* My Picture */
-.CarlosMarin{
-  width: 400px;
-display: block;
-margin-left: auto;
-
-
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.icons {
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+.icons:hover {
+  transform: scale(1.15);
 }
 
-/* Bio text div */
-.about-me-text{
-  width: 400px;
-  text-align: center;
-  margin: 0 auto;
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
-  text-align: center;
-
+span {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
 }
 
-  /* h1 header of Carlos Marin's Portfolio */
-  h1 {
-    text-align: center; /* Center text inside the div */
-  }
-
-  
-  img {
-    width: 100px;
-  }
-  
-
-  .icon{
-    color: white;
-  }
+h1 {
+  color: black;
+}
