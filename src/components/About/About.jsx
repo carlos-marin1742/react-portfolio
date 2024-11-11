@@ -1,6 +1,8 @@
 import React from "react";
 
 import styles from "./About.module.css";
+
+import Programming from "./programming.png"
 import { getImageUrl } from "../../utils";
 
 export const About = () => {
@@ -9,8 +11,8 @@ export const About = () => {
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
         <img
-          src={getImageUrl("about/aboutImage.png")}
-          alt="Me sitting with a laptop"
+          src={Programming}
+          alt="Programming"
           className={styles.aboutImage}
         />
         <ul className={styles.aboutItems}>
@@ -37,10 +39,9 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
+              <h3>Data Scientist</h3>
               <p>
-                I have designed multiple landing pages and have created design
-                systems as well
+                Designed and implemented machine learning models, NLP, and computer vison models
               </p>
             </div>
           </li>
