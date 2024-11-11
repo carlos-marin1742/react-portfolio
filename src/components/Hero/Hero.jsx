@@ -7,11 +7,14 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Carlos Marin</h1>
+        <h1 className={styles.title}>Hi, I'm Carlos! </h1>
+
+      {/*Hero Text */}
         <p className={styles.description}>
-          I'm a full-stack developer with 5 years of experience using React and
-          NodeJS. Reach out if you'd like to learn more!
+        I am an enthusiastic and motivated aspiring software engineer, 
+        with Solid experience in data science principles and software development.
         </p>
+          {/*Hero Text */}
         <a href="mailto:carlosmarinjr1@gmail.com" className={styles.contactBtn}>
           Contact Me
         </a>
